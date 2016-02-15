@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>angular workshop</title>
+  
+</head>
+<body>
+  <h1> yooooooooo </h1>
+
+  <div id="container" ng-app='app1'>
+    <div> sum of 1 &2 = <b ng-bind="{{ 1+2 }}"> </b> </div>
+   
+    <form name='userForm'>
+      <div>
+        <label ng-bind="name"> HI </label>
+        <input type='text' name="name" ng-model="name" ng-maxlength=10 ng-minlength=2 required></input>
+        <div ng-show='userForm.name.$error.required'> name can't be blank</div>
+      </div>
+      <!-- <div> {{userForm.name.$error}} </div> -->
+
+      <input type="submit" ng-disabled="userForm.$invalid"></input>
+    </form>
+  </div>
+  
+  <script type="text/javascript" src="/home/anujaj/angular-workshop/node_modules/angular/angular.js"></script>
+  <script type="text/javascript"> 
+    angular.module('app1', []);
+  </script>
+</body>
+</html>

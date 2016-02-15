@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>yoo Articles</title>
+
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"> </script>
+    <script type="text/javascript" src="js/articleCntrl.js"></script>
+    <script type="text/javascript" src="js/articlesCntrl.js"></script>
+    
+  </head>
+  <body>
+    <h1> yooooooooo article gallery</h1>
+
+    <div id="container" ng-app='app1'>
+      <div ng-controller='articleCntrl'>
+        <!-- <a ng-href="/#/articles"> article list </a> -->
+        <!-- <div ng-include="'templates/form.html'"></div> -->
+
+        <ng-view></ng-view>
+        <a ng-href="/#/articles/new"> New article </a>
+        <br/>
+        <a ng-href="/#/articles"> Back to list </a>
+      </div>
+    </div>
+  </body>
+</html>

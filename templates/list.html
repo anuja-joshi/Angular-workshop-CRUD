@@ -1,0 +1,4 @@
+<h3> listing articles </h3>
+<ul ng-repeat='article in articles'>
+  <li> title: {{article.title}}, description: {{article.description}} <a ng-href="/#/articles/{{article.id}}"> Show</a> <a ng-href="/#/articles/{{article.id}}/edit"> Edit </a><button ng-click="destroyArticle(article.id)" > Destroy</button> </li>
+</ul>
